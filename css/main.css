@@ -190,13 +190,6 @@ strong {
   font-weight: 700;
   color: #36363c;
 }
-.emoji {
-  display: inline-block;
-  vertical-align: text-top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +224,7 @@ strong {
   flex-shrink: 0;
   width: 150px;
   margin-right: 70px;
-  color: #36363c;
+  color: #1574ff;
   text-transform: uppercase;
   text-align: right;
   font-weight: 700;
@@ -555,81 +548,6 @@ strong {
 .intro__hello {
   font-weight: 300;
 }
-.intro__hello .wave-hand {
-  background-image: url(../img/emojis/wave.png);
-  margin-left: 10px;
-  cursor: pointer;
-}
-.intro__hello .wave-hand.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.intro__hello .wave-hand.wave {
-  -webkit-animation-name: wave;
-  animation-name: wave;
-}
-@-webkit-keyframes wave {
-  from {
-    -webkit-transform: none;
-    transform: none;
-  }
-  15% {
-    -webkit-transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-  }
-  30% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-  }
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-  }
-  60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-  }
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-  }
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes wave {
-  from {
-    -webkit-transform: none;
-    transform: none;
-  }
-  15% {
-    -webkit-transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-  }
-  30% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-  }
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-  }
-  60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-  }
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-  }
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 .intro__tagline {
   font-weight: 300;
   max-width: 1000px;
@@ -641,6 +559,7 @@ strong {
   background-image: url(../img/emojis/technologist.png);
 }
 .intro__contact {
+  color: #1574ff;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -650,7 +569,6 @@ strong {
   }
 }
 .intro__contact .emoji.pointer {
-  background-image: url(../img/emojis/pointright.png);
   width: 30px;
   height: 30px;
   margin: 0 5px;
@@ -925,7 +843,7 @@ strong {
   padding: 2px 7px;
   border-radius: 3px;
   color: #36363c;
-  border: 1px solid #36363c;
+  border: 2px solid #1574ff;
   background: 0 0;
 }
 .other-projects .project__used__item:first-of-type {
