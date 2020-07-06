@@ -53,10 +53,13 @@
     <div id="site">
       <header class="intro">
         <h1 class="intro__hello">
-          Hi!
+          Hi! I'm <span class="name">Saurabh Sunil Deshmukh,</span>
         </h1>
         <h2 class="intro__tagline">
-          I'm <span class="name">Saurabh Sunil Deshmukh</span>, incoming Software Engineer focused on solving technological problems using Machine Learning and Backend technologies
+          <span class="typed"></span>
+          <br>
+          <br>
+          I am focused on solving technological problems using Machine Learning and Backend technologies.
         </h2>
         <h3 class="intro__contact"> <span> View my Resume</span>
           <span>
@@ -217,11 +220,50 @@
       </footer>
       
     </div>
-    <script
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script>
+        $(function () {
+          $('.typed').typed({
+            strings: ['Software Engineer', 'Incoming Software Engineer'],
+            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 20,
+            // time before typing starts
+            startDelay: 1200,
+            // backspacing speed
+            backSpeed: 20,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: 1,
+            // show cursor
+            showCursor: false,
+            // character for cursor
+            cursorChar: '|',
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function () {},
+            // starting callback function before each string
+            preStringTyped: function () {},
+            //callback for every typed string
+            onStringTyped: function () {},
+            // callback for reset
+            resetCallback: function () {},
+          });
+        });
+      </script>
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
       type="text/javascript"
       charset="utf-8"
-    ></script>
+    ></script> -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- <script src="js/main.js" type="text/javascript" charset="utf-8"></script> -->
   </body>

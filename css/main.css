@@ -552,11 +552,13 @@ strong {
   font-weight: 300;
   max-width: 1000px;
 }
-.intro__tagline .name {
+.intro__hello .name {
   font-weight: 700;
 }
-.intro__tagline .technologist {
-  background-image: url(../img/emojis/technologist.png);
+.typed {
+  color: #1574ff;
+  font-weight: 200;
+  font-size: 2.0rem;
 }
 .intro__contact {
   color: #1574ff;
@@ -596,6 +598,56 @@ strong {
   box-shadow: inset 0 -33px 0 0 #36363c;
   color: #fff;
 }
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: '|';
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+/* .typed-cursor {
+  opacity: 0;
+  display: none;
+} */
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .skills .skillz {
   display: -webkit-box;
   display: -ms-flexbox;
