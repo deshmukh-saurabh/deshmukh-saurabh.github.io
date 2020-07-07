@@ -487,62 +487,41 @@ strong {
 }
 .intro__hello,
 .intro__tagline {
-  font-size: 2.0rem;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
   .intro__hello,
-  .intro__tagline {
-    font-size: 2.0rem;
+  .intro__tagline,
+  .typed {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 768px) {
   .intro__hello,
-  .intro__tagline {
-    font-size: 2rem;
+  .intro__tagline,
+  .typed {
+    font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 550px) {
   .intro__hello,
-  .intro__tagline {
+  .intro__tagline,
+  .typed {
     font-size: 1.75rem;
   }
 }
 @media screen and (max-width: 360px) {
   .intro__hello,
-  .intro__tagline {
+  .intro__tagline,
+  .typed {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 330px) {
   .intro__hello,
-  .intro__tagline {
+  .intro__tagline,
+  .typed {
     font-size: 1.4rem;
-  }
-}
-.intro__hello .emoji,
-.intro__tagline .emoji {
-  width: 40px;
-  height: 40px;
-}
-@media screen and (max-width: 1024px) {
-  .intro__hello .emoji,
-  .intro__tagline .emoji {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .intro__hello .emoji,
-  .intro__tagline .emoji {
-    width: 30px;
-    height: 30px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .intro__hello .emoji,
-  .intro__tagline .emoji {
-    width: 25px;
-    height: 25px;
   }
 }
 .intro__hello {
@@ -552,13 +531,16 @@ strong {
   font-weight: 300;
   max-width: 1000px;
 }
-.intro__hello .name {
+.intro__tagline .name{
   font-weight: 700;
 }
+/* .intro__hello .name {
+  font-weight: 700;
+} */
 .typed {
-  color: #1574ff;
-  font-weight: 100;
-  font-size: 1.8rem;
+  color:#36363c;
+  font-weight: 200;
+  font-size: 2.5rem;
 }
 .intro__contact {
   color: #1574ff;
