@@ -248,7 +248,7 @@ strong {
 }
 .section__content {
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 100%;
   max-width: 650px;
 }
@@ -486,7 +486,8 @@ strong {
   }
 }
 .intro__hello,
-.intro__tagline {
+.intro__tagline,
+.typed {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
@@ -537,11 +538,7 @@ strong {
 /* .intro__hello .name {
   font-weight: 700;
 } */
-.typed {
-  color:#36363c;
-  font-weight: 200;
-  font-size: 2.5rem;
-}
+
 .intro__contact {
   color: #1574ff;
   font-size: 1.25rem;
