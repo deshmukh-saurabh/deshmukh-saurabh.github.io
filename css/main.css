@@ -490,6 +490,9 @@ strong {
 .typed {
   font-size: 2.5rem;
 }
+.typed {
+  color: #1574ff;
+}
 @media screen and (max-width: 1024px) {
   .intro__hello,
   .intro__tagline,
@@ -1000,7 +1003,7 @@ strong {
   }
 }
 .footer__links img {
-  display: none;
+  display: inline-block;
   width: 22px;
 }
 @media screen and (max-width: 850px) {
